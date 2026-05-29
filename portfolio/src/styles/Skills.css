@@ -1,0 +1,222 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+/* SECTION */
+
+.skills{
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  padding: 100px 0;
+
+  overflow: hidden;
+
+  background:
+  linear-gradient(
+    135deg,
+    #fff1f2,
+    #fdf4ff,
+    #eff6ff
+  );
+}
+
+/* TITLE */
+
+.skills-title{
+
+  text-align: center;
+
+  font-size: 70px;
+
+  margin-bottom: 70px;
+
+  color: #0f172a;
+
+  font-weight: bold;
+}
+
+.skills-title span{
+
+  color: #ec4899;
+}
+
+/* SLIDER */
+
+.slider{
+
+  width: 100%;
+
+  padding: 50px;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+/* TRACK */
+
+.slide-track{
+
+  display: flex;
+
+  gap: 35px;
+
+  width: calc(280px * 12);
+
+  animation: scroll 20s linear infinite;
+}
+
+/* AUTO SLIDE */
+
+@keyframes scroll{
+
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(calc(-280px * 6));
+  }
+}
+
+/* BOX */
+
+.skill-box{
+
+  width: 450px;
+
+  height: 450px;
+
+  background: rgba(255,255,255,0.15);
+
+  border-radius: 30px;
+
+  padding: 25px;
+
+  border: 2px solid transparent;
+
+  transition: 0.5s;
+
+  backdrop-filter: blur(12px);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 20px;
+
+  cursor: pointer;
+}
+
+/* MULTICOLOR GLOW */
+
+.skill-box:hover{
+
+  transform: translateY(-12px) scale(1.05);
+
+  background:
+  linear-gradient(
+    135deg,
+    #ec4899,
+    #8b5cf6,
+    #3b82f6
+  );
+
+  border: 2px solid #ffffff;
+
+  box-shadow:
+    0 0 20px #ec4899,
+    0 0 35px #8b5cf6,
+    0 0 50px #3b82f6;
+}
+
+/* IMAGE */
+
+.skill-box img{
+
+  width: 160px;
+
+  height: 460px;
+
+  object-fit: contain;
+
+  transition: 0.5s;
+}
+
+/* IMAGE HOVER */
+
+.skill-box:hover img{
+
+  transform: scale(1.15) rotate(8deg);
+}
+
+/* TEXT */
+
+.skill-box h2{
+
+  font-size: 32px;
+
+  font-weight: bold;
+
+  color: #334155;
+
+  transition: 0.5s;
+}
+
+/* TEXT HOVER */
+
+.skill-box:hover h2{
+
+  color: white;
+}
+
+/* PAUSE ON HOVER */
+
+.slide-track:hover{
+
+  animation-play-state: paused;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px){
+
+  .skills-title{
+
+    font-size: 48px;
+  }
+
+  .skill-box{
+
+    width: 180px;
+
+    height: 240px;
+  }
+
+  .skill-box img{
+
+    width: 80px;
+
+    height: 80px;
+  }
+
+  .skill-box h2{
+
+    font-size: 24px;
+  }
+}
+

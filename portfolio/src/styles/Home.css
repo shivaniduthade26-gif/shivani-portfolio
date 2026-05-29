@@ -1,0 +1,157 @@
+/* HOME SECTION */
+
+.home{
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 120px 10%;
+
+  background:
+  linear-gradient(
+    135deg,
+    #fdf2f8,
+    #ede9fe,
+    #dbeafe
+  );
+}
+
+/* IMAGE BOX */
+
+.hero-image-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGE */
+
+.hero-image{
+  width: 420px;
+  height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 8px solid white;
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.15);
+
+  transition: 0.5s;
+}
+
+/* IMAGE HOVER */
+
+.hero-image:hover{
+  transform: scale(1.05);
+}
+
+/* CONTENT */
+
+.home-content{
+  max-width: 600px;
+}
+
+.home-content h3{
+  font-size: 28px;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.home-content h1{
+  font-size: 70px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.home-content h2{
+  font-size: 35px;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.home-content span{
+  color: #ec4899;
+}
+
+.home-content p{
+  font-size: 18px;
+  color: #475569;
+  line-height: 32px;
+  margin-bottom: 35px;
+}
+
+/* BUTTONS */
+
+.home-buttons{
+  display: flex;
+  gap: 20px;
+}
+
+.resume-btn,
+.contact-btn{
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+/* RESUME BUTTON */
+
+.resume-btn{
+  background: #ec4899;
+  color: white;
+}
+
+.resume-btn:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(236,72,153,0.3);
+}
+
+/* CONTACT BUTTON */
+
+.contact-btn{
+  border: 2px solid #ec4899;
+  color: #ec4899;
+  background: white;
+}
+
+.contact-btn:hover{
+  background: #ec4899;
+  color: white;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px){
+
+  .home{
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .home-buttons{
+    justify-content: center;
+  }
+
+  .home-content h1{
+    font-size: 50px;
+  }
+
+  .home-content h2{
+    font-size: 28px;
+  }
+
+  .hero-image{
+    width: 250px;
+    height: 250px;
+  }
+}
