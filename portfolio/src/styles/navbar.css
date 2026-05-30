@@ -666,4 +666,11 @@ html{
     right: 10px !important;
   }
 }
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
     

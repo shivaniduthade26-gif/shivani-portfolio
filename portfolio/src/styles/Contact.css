@@ -318,18 +318,15 @@ textarea:focus{
 }
 
 /* BUTTON */
+  button{
+  width: 150px;
 
-button{
-  width: 100%;
-
-  padding: 18px;
+  padding: 10px 10px;
 
   border: none;
-
   border-radius: 18px;
 
-  background:
-  linear-gradient(
+  background: linear-gradient(
     135deg,
     hsl(117, 86%, 28%),
     #0a8316
@@ -337,20 +334,12 @@ button{
 
   color: white;
 
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 
   cursor: pointer;
 
   transition: 0.5s;
-}
-
-button:hover{
-
-  transform: translateY(-5px);
-
-  box-shadow:
-    0 0 20px rgba(249,115,22,0.4);
 }
 
 /* BACK */

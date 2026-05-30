@@ -64,7 +64,7 @@ emailjs.sendForm(
           {/* GITHUB */}
 
 <a
-  href="https://github.com"
+  href="https://github.com/shivaniduthade26-gif/shivani-portfolio"
   target="_blank"
   rel="noreferrer"
   className="contact-item"
